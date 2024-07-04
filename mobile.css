@@ -1,0 +1,42 @@
+@media screen and (max-width:480px) {
+#img-container{
+    height: 72vh;
+}
+#page1{
+    height: 78vh;
+}
+#show span{
+    padding: 1vh 5vw;
+    background-color: #92d2f3;
+    font-size: 3.5vw;
+    font-weight: 800;
+    border-radius: 29px;
+}
+.packeges-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.packege-body{
+    height: 50vh;
+    width: 35vh;
+}
+.dest-img{
+    height: 44%;
+}
+.des-info{
+    font-size: 5.5vw;
+}
+.days{
+    font-size: 4.3vw;
+}
+.prise{
+    font-size: 5vw;
+}
+.btn-des-1{
+    padding: 1vh 9vw;
+    font-size: 4vw;
+}
+}
+    
