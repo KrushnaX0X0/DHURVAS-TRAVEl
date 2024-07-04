@@ -126,7 +126,44 @@ let NewCreatedRouts = ""
     document.querySelector("#new-added-cover").innerHTML= NewCreatedRouts
  }
 
+
+
+
+ /// nav bar animation ..
+
+
  
+// nav-bar animation...
+
+let openIcon = document.querySelector("#nav-opener img");
+let closeIcon = document.querySelector("#close i")
+let navInfoPage = document.querySelector("#mob-nav")
+ 
+let navTimelien=gsap.timeline();
+
+//console.log(openIcon , closeIcon, navInfoPage)
+
+navTimelien.from(navInfoPage,{
+     left:"100%",
+     duration:1
+})
+
+navTimelien.from('#mob-nav ul li ',{
+     x:100,
+     opacity:0,
+     stagger:0.3,
+})
+
+navTimelien.pause()
+
+openIcon.addEventListener("click",()=>{
+    navTimelien.play()
+})
+ 
+closeIcon.addEventListener("click",()=>{
+    navTimelien.reverse()
+})
+
 
 
 

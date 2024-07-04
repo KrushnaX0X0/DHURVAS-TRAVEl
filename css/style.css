@@ -118,10 +118,9 @@ body::-webkit-scrollbar{
    background-color: rgba(245, 245, 245, 0.801);
    position: absolute;
    top: 0;
-   left: 0;
+   left:0;
    backdrop-filter: blur(10px);
    display: none;
-   
 }
 
 #mob-nav #close{
