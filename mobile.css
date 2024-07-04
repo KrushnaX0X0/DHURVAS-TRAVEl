@@ -1,9 +1,56 @@
 @media screen and (max-width:480px) {
+    #left ul{
+        display: none;
+    }
+
+    #nav-opener{
+        display: block;
+    }
+
+
+    #nav-opener img{
+        height: 50%;
+    }
+
+
+    #mob-nav{
+        display:block ;
+        
+     }
+
+     #mob-nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: vw;
+     }
+
+    #mob-nav ul li{
+        margin: 3vh 0;
+    }
+
+
+     #mob-nav ul li a{
+        font-size: 8vw;
+        margin: 10vh 0;
+     }
+
+
 #img-container{
-    height: 72vh;
+    height: 63vh;
 }
+
+
 #page1{
-    height: 78vh;
+    height: 68vh;
+}
+#info-div h2{
+    font-size: 18vw;
+    line-height: 14vh;
+}
+#info-div h3 {
+    font-size: 6.9vw;
 }
 #show span{
     padding: 1vh 5vw;
@@ -28,6 +75,10 @@
 .des-info{
     font-size: 5.5vw;
 }
+.extra-name{
+    font-size: 4.9vw ;
+    
+}
 .days{
     font-size: 4.3vw;
 }
@@ -36,6 +87,12 @@
 }
 .btn-des-1{
     padding: 1vh 9vw;
+    font-size: 4vw;
+}
+#new-added-cover h3{
+    font-size:6vw ;
+}
+.other-country span{
     font-size: 4vw;
 }
 }
