@@ -85,7 +85,7 @@ const url = `https://travel-t0sy.onrender.com/api/routs`;
  }).then((result)=>{
     
      // send fetced data to add in web site by dynamically
-       console.log(result)
+    //console.log(result)
       addNewRouts(result)
 
  }).catch((err)=>{
@@ -113,7 +113,7 @@ let NewCreatedRouts = ""
                     </div>
                     <div class="cost-info">
                          <span class="days">${rout.travelTime}</span>
-                         <span class="prise"><i class="ri-money-rupee-circle-line"></i> ${rout.cost} RS</span>
+                         <span class="prise"><i class="ri-money-rupee-circle-line"></i> RS ${rout.cost}</span>
                     </div>
                          <span class="date days">Starting at :${rout.date}</span>
                     <button class="btn-des-1">Know More</button>
@@ -127,13 +127,10 @@ let NewCreatedRouts = ""
  }
 
 
-
-
  /// nav bar animation ..
 
-
- 
 // nav-bar animation...
+
 
 let openIcon = document.querySelector("#nav-opener img");
 let closeIcon = document.querySelector("#close i")
@@ -145,7 +142,7 @@ let navTimelien=gsap.timeline();
 
 navTimelien.from(navInfoPage,{
      left:"100%",
-     duration:1
+     duration:0.4
 })
 
 navTimelien.from('#mob-nav ul li ',{
