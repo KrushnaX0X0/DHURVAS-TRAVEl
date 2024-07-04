@@ -1,4 +1,19 @@
 @media screen and (max-width:480px) {
+    #right h1{
+        font-size: 5.9vw;
+    }
+    #right img {
+        height: 100%;
+        width: 16vw;
+    }
+    #nav-opener{
+        width: 11vw;
+    }
+    #nav-opener img{
+        margin-top: 2vh;
+    }
+    
+
     #left ul{
         display: none;
     }
@@ -52,6 +67,9 @@
 #info-div h3 {
     font-size: 6.9vw;
 }
+#show{
+    margin-top: 5vh;
+}
 #show span{
     padding: 1vh 5vw;
     background-color: #92d2f3;
@@ -93,7 +111,12 @@
     font-size:6vw ;
 }
 .other-country span{
-    font-size: 4vw;
+    font-size: 5vw;
+}
+#new-added-cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 }
     
