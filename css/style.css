@@ -269,14 +269,20 @@ body::-webkit-scrollbar{
     background-color:#f1f5f7;
 }
 
+
+#country-container{
+  height: 30vh;
+  width: 100%;
+}
+
 .other-country{
-     height: 10vh;
+     height: 7vh;
      width: 100%;
      white-space: nowrap;
 }
 
 .other-country span{
-     font-size: 1.9vw;
+     font-size: 2vw;
      font-weight: 900;
      display: inline-block;
      margin: 0 2vw;
