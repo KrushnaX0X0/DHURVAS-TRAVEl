@@ -154,7 +154,7 @@ body::-webkit-scrollbar{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10vh;
+    margin-bottom: 1vh;
 }
 
 #show span{
@@ -165,13 +165,14 @@ body::-webkit-scrollbar{
     border-radius: 29px;
 }
 
-.packeges-container{
+.packeges-container,#new-added-cover{
     width: 95vw;
     margin: 4vh auto;
     overflow: hidden;
     display: flex;
     gap: 5vw;
     flex-wrap: wrap;
+    margin-top: 6vh;
 }
 
 .packege-body{
@@ -246,3 +247,45 @@ body::-webkit-scrollbar{
 .extra-name{
     font-size: 1.4vw;
 }
+
+#new-added-cover h3{
+    margin: 0 auto;
+    color: gray;
+    font-size: 2vw;
+}
+
+#new-added-cover{
+    padding: 3vh 0;
+}
+
+.date{
+    color: gray;
+}
+
+
+#page3{
+    height: 100vh;
+    width: 100vw;
+    background-color:#f1f5f7;
+}
+
+
+#country-container{
+  height: 30vh;
+  width: 100%;
+}
+
+.other-country{
+     height: 7vh;
+     width: 100%;
+     white-space: nowrap;
+}
+
+.other-country span{
+     font-size: 2vw;
+     font-weight: 900;
+     display: inline-block;
+     margin: 0 2vw;
+     text-align: justify;
+}
+
