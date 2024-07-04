@@ -141,7 +141,7 @@ body::-webkit-scrollbar{
 }
 
 #page2{
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background-color: #f1f5f7   ;
 }
@@ -154,6 +154,7 @@ body::-webkit-scrollbar{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10vh;
 }
 
 #show span{
@@ -165,12 +166,12 @@ body::-webkit-scrollbar{
 }
 
 .packeges-container{
-    height: 95vh;
     width: 95vw;
     margin: 4vh auto;
     overflow: hidden;
     display: flex;
     gap: 5vw;
+    flex-wrap: wrap;
 }
 
 .packege-body{
@@ -188,7 +189,7 @@ body::-webkit-scrollbar{
 .dest-img{
     height: 40%;
     width: 100%;
-    background-color: red;
+    background-color: rgb(133, 133, 133);
 }
 
 .dest-img img{
@@ -235,4 +236,13 @@ body::-webkit-scrollbar{
     border-radius: 4px;
     cursor: pointer;
     background: linear-gradient(to right,rgb(129, 129, 251),#92d2f3);
+}
+
+.btn-des-1:hover{
+    background: linear-gradient(to left,rgb(129, 129, 251),#92d2f3);
+
+}
+
+.extra-name{
+    font-size: 1.4vw;
 }
