@@ -42,24 +42,22 @@ let infoTxt = document.querySelector("#info-div h3")
 
     gsap.from(img,{
         opacity:0,
-        duration:4,
+        duration:5,
         ease:'none'
     })
 
     gsap.from(headingTxt,{
         opacity:0,
-        duration:4,
+        duration:5,
         ease:'none'
     })
     
     gsap.from(infoTxt,{
         opacity:0,
-        duration:4,
+        duration:5,
         ease:'none'
     })
 
-
-  
 
 }
  
@@ -72,7 +70,7 @@ setInterval(function h(){
          ++i
          //console.log(i)
      }
-}, 9000);
+}, 5000);
 
 
 
