@@ -70,7 +70,7 @@ setInterval(function h(){
          ++i
          //console.log(i)
      }
-}, 5000);
+}, 6000);
 
 
 
