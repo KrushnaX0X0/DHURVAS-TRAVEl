@@ -2,9 +2,9 @@
 
 const data = [
     {
-        imgUrl: "rajstan.jpg",
-        name: "Rajasthan",
-        info: 'Experience the Royal Heritage'
+        imgUrl: "shimla1.gif",
+        name: "Shimla",
+        info: 'Experience the Cold'
     },
 
     {
@@ -14,13 +14,13 @@ const data = [
     },
 
     {
-        imgUrl: "andman.jpg",
-        name: "Andaman",
-        info: "Explore the another Heart of India"
+        imgUrl: "kerla.jpg",
+        name: "Kerla",
+        info: "Explore the Heart of India"
     },
 
     {
-        imgUrl: "bhutan.jpg",
+        imgUrl: "bhutan 1.jpg",
         name: "Bhutan",
         info: "Where History comes Alive"
     }
@@ -178,33 +178,6 @@ const getContact = (tour) => {
 
 //fetching gallary data using backend api...
 
-const GallaryImagesUrl = `https://travel-t0sy.onrender.com/api/gallary`;
-
-fetch(GallaryImagesUrl).then((Responce) => {
-    return Responce.json()
-}).then((result) => {
-    console.log(result)
-    addToGallary(result)
-}).catch((error) => {
-    console.log(error)
-})
-
-
-let GallaryHtml = ""
-
-function addToGallary(pictues) {
-
-    pictues.forEach((picture) => {
-        GallaryHtml += `<div class="gallary-image">
-                          <img src="${picture.travelImage}" alt="">
-                          <div class="img-info">
-                               ${picture.info}
-                          </div>
-                      </div>`
-    })
-    document.querySelector("#gallary-img-container").innerHTML = GallaryHtml
-}
-
 
 
 //open the contact info...
@@ -213,7 +186,7 @@ function addToGallary(pictues) {
 
 
  function wp(){
-    window.open(`https://wa.me/+917738910772/?text=hello`)
+    window.open(`https://wa.me/+917738910772/?text=hello_I_want_Know_about_Tours`)
  }
 
  function insta(){

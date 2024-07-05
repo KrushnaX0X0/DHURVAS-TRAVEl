@@ -122,9 +122,13 @@
     height: 46vh;
 }
 .gallary-image{
-    height: 88%;
-    width: 70vw;
+    height: 25vh;
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 4vh;
 }
+
+
 #page3{
     height: 133vh;
 }
