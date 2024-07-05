@@ -1,0 +1,66 @@
+
+@media screen and (min-width:722px) and (max-width:1015px){
+   
+    #show{
+        
+    }
+    #show span{
+        padding: 1vh 5vw;
+        background-color: #92d2f3;
+        font-size: vw;
+        font-weight: 800;
+        border-radius: 29px;
+    }
+    .packeges-container{
+        
+    
+    }
+    .packege-body{
+        height: 50vh;
+        width: 36vh;
+        margin: 0px 2vw;
+    }
+    .dest-img{
+        height: 44%;
+    }
+    .des-info{
+        font-size: vw;
+    }
+    .extra-name{
+        font-size: vw ;
+        
+    }
+    .days{
+        font-size: vw;
+    }
+    .prise{
+        font-size: vw;
+    }
+    .btn-des-1{
+        padding: 1vh 3vw;
+        font-size: vw;
+    }
+    #new-added-cover h3{
+        font-size: ;
+    }
+    .other-country span{
+        font-size: ;
+    }
+    #new-added-cover{
+        
+    }
+    #page5{
+        height: 60vh;
+    }
+    #contact-container{
+        width: 95vw;
+    }
+    .contact{
+        width: 23vw;
+    }
+    .contact-info{
+        font-size: 2vw;
+    }
+   
+
+}
