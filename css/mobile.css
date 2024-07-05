@@ -118,5 +118,64 @@
     justify-content: center;
     align-items: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*makeing loder responsive*/
+  
+
+#loder{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:linear-gradient(to left,whitesmoke,rgb(243, 217, 221),rgb(225, 240, 247),rgb(245, 245, 216));
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#anm-loder{
+   height: 40vh;
+   width: 100vw;
+}
+.loder{
+   height: 30px;
+   width: 30px;
+   border: 7px solid black;
+   border-top: 7px solid rgb(255, 3, 3);
+}
+
+
+
+#loder h3{
+   font-size: 7.5vw;
+}
+
 }
     
