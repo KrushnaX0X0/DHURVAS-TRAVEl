@@ -221,7 +221,7 @@ function addToGallary(pictues) {
  }
 
  function mail(){
-    window.open(`mailto:[eduravaworldoftravel@gmail.com]?subject=Me&body=Hello!`)
+    window.open(`mailto:eduravaworldoftravel@gmail.com?subject=knowAboutTours&body=Hello!`)
  }
 
 
