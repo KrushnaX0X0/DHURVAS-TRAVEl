@@ -24,7 +24,7 @@ html,body{
     width: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
-    scroll-behavior: ;
+    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar{

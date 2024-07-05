@@ -217,6 +217,6 @@ let loder = document.querySelector("#loder")
 
 window.addEventListener('load', () => {
     loder.style.display="none"
-    console.log("HEY WELCOME:\n<<<<< DURAV'S WORLD TRAVELS AND EXPLORE>>>")
+    console.log("HEY WELCOME:\n<<< DURAV'S WORLD TRAVELS AND EXPLORE>>>")
 })
 
