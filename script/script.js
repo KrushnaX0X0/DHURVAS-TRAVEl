@@ -212,10 +212,10 @@ setInterval(function loderLen() {
 }, 1000 / 7);
 
 window.addEventListener('load',  () => {
-    // loder.style.display = "none"
+     loder.style.display = "none"
     console.log("HEY WELCOME:\n<<< DURAV'S WORLD TRAVELS AND EXPLORE>>>")
 })
 
 setTimeout(()=>{
-    //loder.style.display = "none"
+ loder.style.display = "none"
 },3000)
