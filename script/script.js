@@ -8,9 +8,9 @@ const data = [
     },
 
     {
-        imgUrl: "kashmir.png",
-        name: "Kashmir",
-        info: "explore beauty of kashmir"
+        imgUrl: "mathura.jpg",
+        name: "Mathura",
+        info: "explore beauty of Mathura"
     },
 
     {
