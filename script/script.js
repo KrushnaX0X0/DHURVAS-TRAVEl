@@ -42,19 +42,19 @@ let infoTxt = document.querySelector("#info-div h3")
 
     gsap.from(img,{
         opacity:0,
-        duration:5,
+        //duration:5,
         ease:'none'
     })
 
     gsap.from(headingTxt,{
         opacity:0,
-        duration:5,
+       // duration:5,
         ease:'none'
     })
     
     gsap.from(infoTxt,{
         opacity:0,
-        duration:5,
+       // duration:5,
         ease:'none'
     })
 
@@ -160,9 +160,18 @@ closeIcon.addEventListener("click",()=>{
 })
 
 
+let mobNavLinks=document.querySelectorAll("#mob-nav ul li")
+   mobNavLinks.forEach((link)=>{
+          link.addEventListener('click',()=>{
+             navTimelien.reverse()
+          })
+   })
+ 
+  // handing button events...
 
-
-  
+    const  getContact = (tour)=>{
+          window.open(`https://wa.me/+918459360294/?text=HELLOW_I_WANT_TO_KNOW_ABOUT_${tour}`)
+    }
 
 
 
