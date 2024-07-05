@@ -213,4 +213,127 @@
    font-size: 2.4vw;
 }
 
+
+
+
+#page4{
+    height: 110vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10vh;  
+}
+
+#page4 .pg4-img{
+    height: 50%;
+}
+ 
+#info-cover{
+    position: absolute;
+    height: 70vh;
+    width: 100vw;
+    background-color: rgba(255, 254, 254, 0.815);
+    top: 10%;
+    left :0;
+    backdrop-filter: blur(1px);
+}
+
+#info-cover h2{
+    text-align: center;
+    font-size: 1.9vw;
+    margin-top: 3vh;
+}
+
+
+#info-cover h3{
+    font-size: 1.7vw;
+    text-align: center;
+    margin-top: 3vh;
+    color: rgb(52, 50, 50);
+}
+
+.spl{
+    color: #49b9f1;
+    font-size: 2vw;
+}
+
+#page5{
+    height: 60vh;
+}
+
+#gallary-img-container{
+    height: 40vh;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x:scroll ;
+    white-space: nowrap;
+    margin-top: 10vh;
+}
+
+
+
+.gallary-image{
+    width: 40vw;
+}
+
+.img-info{
+    font-size: 2.7vw;
+
+}
+
+
+
+
+#page4{
+    height: 110vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10vh;  
+}
+
+#page4 .pg4-img{
+    height: 50%;
+}
+ 
+#info-cover{
+    position: absolute;
+    height: 70vh;
+    width: 100vw;
+    background-color: rgba(255, 254, 254, 0.815);
+    top: 10%;
+    left :0;
+    backdrop-filter: blur(1px);
+}
+
+#info-cover h2{
+    font-size: 2.9vw;
+}
+
+
+#info-cover h3{
+    font-size: 2.7vw;
+}
+
+.spl{
+    font-size: 3vw;
+}
+
+
+#anm-loder{
+   height: 50vh;
+   width: 80vw;
+}
+
+#loder h3{
+   font-size: 2.9vw;
+   font-weight: 800;
+   color: black;
+}
+
+
 }
