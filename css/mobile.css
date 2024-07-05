@@ -118,6 +118,44 @@
     justify-content: center;
     align-items: center;
 }
+#page5{
+    height: 46vh;
+}
+.gallary-image{
+    height: 88%;
+    width: 70vw;
+}
+#page3{
+    height: 133vh;
+}
+.img-info {
+    font-size: 6.4vw;
+}
+#contact-container{
+    height: 126vh;
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+}
+.contact-logo {
+    height: 18vh;
+    width: 100%;
+}
+.contact-logo img{
+    margin-left: 10.5vw;
+}
+.contact{
+    width: 61vw;
+    height: 80vw;
+}
+.contact-info {
+    font-size: 5.3vw;
+}
+.contact-btn{
+padding: 1.8vh 3.5vw;
+font-size:4vw ;
+}
 
 
 
