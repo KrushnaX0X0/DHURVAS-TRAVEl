@@ -24,6 +24,7 @@ html,body{
     width: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
+    scroll-behavior: ;
 }
 
 body::-webkit-scrollbar{
@@ -299,7 +300,7 @@ body::-webkit-scrollbar{
 
 
 #page3{
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     background-color:#f1f5f7;
 }
@@ -324,3 +325,210 @@ body::-webkit-scrollbar{
      text-align: justify;
 }
 
+
+#contact-container{
+    height: 45vh;
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 10vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.contact{
+    height: 45vh;
+    width: 18vw;
+    box-shadow:  32px 32px 70px #b1b1b1,
+             -32px -32px 70px #ffffff;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:linear-gradient(rgba(244, 244, 191, 0.393),rgba(254, 217, 223, 0.374),rgba(190, 231, 248, 0.534)) ;
+    justify-content: space-evenly;
+}
+
+.contact-logo{
+   height: 20vh;
+   width: 100%;
+}
+
+.contact-logo img{
+    height: 100%;
+    margin:0 auto;
+    margin-left: 4vw;
+    transform: rotate(-20deg);
+    transition: all .4s linear;
+}
+
+.contact-info{
+    text-align: center;
+    font-size: 1.3vw;
+    color: rgb(113, 110, 110);
+}
+
+.contact-btn{
+   padding: 0.8vh 1.5vw;
+   font-size: 1.4vw;
+   border: none;
+   cursor: pointer;
+   background-color: rgb(147, 193, 236) ;
+   position: relative;
+   overflow: hidden;
+   z-index: 1;
+}
+.contact-logo .mail{
+    transform: rotate(10deg);
+    height: 90%;
+}
+
+.contact-logo img:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.contact-btn::before{
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(183, 38, 231, 0.989);
+    top: 0;
+    left: -100%;
+   transition: all .5s linear;
+   z-index: -2;
+}
+.contact-btn:hover{
+    color: white;
+}
+
+.contact-btn:hover::before{
+    left: 0;
+    color: white;
+}
+
+
+
+#page4{
+    height: 100vh;
+    width: 100vw;
+    background-color: red;
+}
+
+
+
+
+#page5{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(246, 246, 246);
+}
+
+#gallary-img-container{
+    height: 40vh;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x:scroll ;
+    white-space: nowrap;
+    margin-top: 10vh;
+}
+
+#gallary-img-container::-webkit-scrollbar{
+    display: none;
+}
+
+.gallary-image{
+    display: inline-block;
+    height: 100%;
+    overflow: hidden;
+    width: 20vw;
+    background-color: green;
+    border-radius: 20px;
+    margin-left: 4vw;
+    position: relative;
+}
+
+.img-info{
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(transparent,rgba(0, 0, 0, 0.559),black) ;
+    top: 100%;
+    left: 0;
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-size: 1.4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s linear;
+}
+
+.gallary-image:hover .img-info{
+  top: 0;
+}
+
+
+
+.gallary-image img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+
+
+
+
+#loder{
+     height: 100%;
+     width: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     background:linear-gradient(to left,whitesmoke,rgb(243, 217, 221),rgb(225, 240, 247),rgb(245, 245, 216));
+     z-index: 1000;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+}
+
+#anm-loder{
+    height: 50vh;
+    width: 40vw;
+    background-image: url(../images/coupan.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    filter: drop-shadow(10px 10px 60px gray);
+}
+.loder{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 10px solid black;
+    border-top: 10px solid rgb(255, 3, 3);
+    animation: loder 1s linear infinite;
+}
+
+@keyframes loder {
+     0%{
+        transform: rotate(0deg);
+     }
+     100%{
+        transform: rotate(360deg);
+     }
+}
+
+#loder h3{
+    font-size: 1.5vw;
+    font-weight: 800;
+    color: black;
+}
