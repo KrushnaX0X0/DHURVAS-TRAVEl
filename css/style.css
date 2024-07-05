@@ -574,8 +574,9 @@ body::-webkit-scrollbar{
      }
 }
 
-#loder h3{
-    font-size: 1.5vw;
-    font-weight: 800;
-    color: black;
+
+#load-txt{
+    display: block;
+    height: 4vh;
+    font-size: 1.9vw;
 }

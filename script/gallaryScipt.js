@@ -80,7 +80,7 @@ setInterval(function loderLen() {
         j = 0;
         loderLen()
     } else {
-        document.querySelector('#loder h3').innerText = lodingTag[i];
+        document.querySelector('#loder h5').innerText = lodingTag[i];
     }
 }, 1000 / 5);
 
