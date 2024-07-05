@@ -2,25 +2,25 @@
 
 const data = [
     {
-        imgUrl: "rajstan.jpg",
-        name: "Rajasthan",
-        info: 'Experience the Royal Heritage'
+        imgUrl: "shimla1.gif",
+        name: "Shimla",
+        info: 'Experience the Cold'
     },
 
     {
-        imgUrl: "kashmir.png",
-        name: "Kashmir",
-        info: "explore beauty of kashmir"
+        imgUrl: "mathura.jpg",
+        name: "Mathura",
+        info: "explore beauty of Mathura"
     },
 
     {
-        imgUrl: "andman.jpg",
-        name: "Andaman",
-        info: "Explore the another Heart of India"
+        imgUrl: "kerla.jpg",
+        name: "Kerla",
+        info: "Explore the Heart of India"
     },
 
     {
-        imgUrl: "bhutan.jpg",
+        imgUrl: "bhutan 1.jpg",
         name: "Bhutan",
         info: "Where History comes Alive"
     }
@@ -102,6 +102,8 @@ function addNewRouts(Routs) {
 
         Routs.forEach((rout) => {
 
+            let link = rout.placeName.replaceAll(" ", "_")
+
             NewCreatedRouts += `<div class="packege-body">
                     <div class="dest-img">
                           <img src="${rout.placeImage}" alt="">
@@ -114,7 +116,7 @@ function addNewRouts(Routs) {
                          <span class="prise"><i class="ri-money-rupee-circle-line"></i> RS ${rout.cost}</span>
                     </div>
                          <span class="date days">Starting at :${rout.date}</span>
-                    <button class="btn-des-1">Know More</button>
+                    <button class="btn-des-1" onclick="getContact('${link}')">Know More</button>
                 </div>`
 
         })
@@ -170,53 +172,47 @@ mobNavLinks.forEach((link) => {
 // handing button events...
 
 const getContact = (tour) => {
-    window.open(`https://wa.me/+918459360294/?text=HELLOW_I_WANT_TO_KNOW_ABOUT_${tour}`)
+    window.open(`https://wa.me/+917738910772/?text=hello_i_want_to_know_more_about_${tour}_tour`)
 }
 
 
-const GallaryImagesUrl = `https://travel-t0sy.onrender.com/api/gallary`;
-
-fetch(GallaryImagesUrl).then((Responce) => {
-    return Responce.json()
-}).then((result) => {
-    console.log(result)
-    addToGallary(result)
-}).catch((error) => {
-    console.log(error)
-})
+//fetching gallary data using backend api...
 
 
-let GallaryHtml = ""
 
-function addToGallary(pictues) {
+//open the contact info...
 
-    pictues.forEach((picture) => {
-        GallaryHtml += `<div class="gallary-image">
-                          <img src="${picture.travelImage}" alt="">
-                          <div class="img-info">
-                               ${picture.info}
-                          </div>
-                      </div>`
-    })
-    document.querySelector("#gallary-img-container").innerHTML = GallaryHtml
-}
+
+
+
+ function wp(){
+    window.open(`https://wa.me/+917738910772/?text=hello_I_want_Know_about_Tours`)
+ }
+
+ function insta(){
+     window.open(`https://instagram.com/durvasworldtravel`)
+ }
+
+ function mail(){
+    window.open(`mailto:durvaworldoftravel@gmail.com?subject=knowAboutTours&body=Hello!`)
+ }
 
 
 let loder = document.querySelector("#loder")
-   let lodingTag=["hey welcome...","checking connection...","loading images","loading tickets...","loding gallary..","wait it is done now..."]
-    let j = 0
-    setInterval(function loderLen(){
-            
-          if(j>lodingTag.length){
-             j=0;
-             loderLen()
-          }else{
-            document.querySelector('#loder h3').innerText=lodingTag[i];
-          }
-    }, 1000/5);
+let lodingTag = ["hey welcome...", "checking connection...", "loading images", "loading tickets...", "loding gallary..", "wait it is done now..."]
+let j = 0
+setInterval(function loderLen() {
+
+    if (j > lodingTag.length) {
+        j = 0;
+        loderLen()
+    } else {
+        document.querySelector('#loder h3').innerText = lodingTag[i];
+    }
+}, 1000 / 5);
 
 window.addEventListener('load', () => {
-    loder.style.display="none"
+    loder.style.display = "none"
     console.log("HEY WELCOME:\n<<< DURAV'S WORLD TRAVELS AND EXPLORE>>>")
 })
 
