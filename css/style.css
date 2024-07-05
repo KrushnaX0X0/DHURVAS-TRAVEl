@@ -545,14 +545,16 @@ body::-webkit-scrollbar{
 #anm-loder{
     height: 50vh;
     width: 40vw;
-    background-image: url(../images/coupan.png);
-    background-repeat: no-repeat;
-    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+#anm-loder img{
     filter: drop-shadow(10px 10px 60px gray);
+    height: 25vh;
+
 }
 .loder{
     height: 50px;

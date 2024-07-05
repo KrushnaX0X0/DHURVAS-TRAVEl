@@ -209,10 +209,13 @@ setInterval(function loderLen() {
     } else {
         document.querySelector('#loder h3').innerText = lodingTag[i];
     }
-}, 1000 / 5);
+}, 1000 / 7);
 
-window.addEventListener('load', () => {
-    loder.style.display = "none"
+window.addEventListener('load',  () => {
+    // loder.style.display = "none"
     console.log("HEY WELCOME:\n<<< DURAV'S WORLD TRAVELS AND EXPLORE>>>")
 })
 
+setTimeout(()=>{
+    //loder.style.display = "none"
+},3000)
