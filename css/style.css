@@ -414,13 +414,47 @@ body::-webkit-scrollbar{
 
 
 #page4{
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
-    background-color: red;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10vh;  
+}
+
+#page4 .pg4-img{
+    height: 50%;
+}
+ 
+#info-cover{
+    position: absolute;
+    height: 70vh;
+    width: 100vw;
+    background-color: rgba(255, 254, 254, 0.815);
+    top: 10%;
+    left :0;
+    backdrop-filter: blur(1px);
+}
+
+#info-cover h2{
+    text-align: center;
+    font-size: 1.9vw;
+    margin-top: 3vh;
 }
 
 
+#info-cover h3{
+    font-size: 1.7vw;
+    text-align: center;
+    margin-top: 3vh;
+    color: rgb(52, 50, 50);
+}
 
+.spl{
+    color: #49b9f1;
+    font-size: 2vw;
+}
 
 #page5{
     height: 100vh;
