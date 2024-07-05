@@ -429,7 +429,7 @@ body::-webkit-scrollbar{
  
 #info-cover{
     position: absolute;
-    height: 70vh;
+    height: 80vh;
     width: 100vw;
     background-color: rgba(235, 232, 232, 0.916);
     top: 10%;
