@@ -102,7 +102,7 @@ function addNewRouts(Routs) {
 
         Routs.forEach((rout) => {
 
-             let link=rout.placeName.replaceAll(" ","_")
+            let link = rout.placeName.replaceAll(" ", "_")
 
             NewCreatedRouts += `<div class="packege-body">
                     <div class="dest-img">
@@ -172,9 +172,11 @@ mobNavLinks.forEach((link) => {
 // handing button events...
 
 const getContact = (tour) => {
-    window.open(`https://wa.me/+917738910772/?text=hello_i_wanr_to_know_more_about_${tour}_tour`)
+    window.open(`https://wa.me/+917738910772/?text=hello_i_want_to_know_more_about_${tour}_tour`)
 }
 
+
+//fetching gallary data using backend api...
 
 const GallaryImagesUrl = `https://travel-t0sy.onrender.com/api/gallary`;
 
@@ -204,21 +206,40 @@ function addToGallary(pictues) {
 }
 
 
+
+//open the contact info...
+
+
+
+
+ function wp(){
+    window.open(`https://wa.me/+917738910772/?text=hello`)
+ }
+
+ function insta(){
+     window.open(`https://instagram.com/durvasworldtravel`)
+ }
+
+ function mail(){
+    window.open(`mailto:[eduravaworldoftravel@gmail.com]?subject=Me&body=Hello!`)
+ }
+
+
 let loder = document.querySelector("#loder")
-   let lodingTag=["hey welcome...","checking connection...","loading images","loading tickets...","loding gallary..","wait it is done now..."]
-    let j = 0
-    setInterval(function loderLen(){
-            
-          if(j>lodingTag.length){
-             j=0;
-             loderLen()
-          }else{
-            document.querySelector('#loder h3').innerText=lodingTag[i];
-          }
-    }, 1000/5);
+let lodingTag = ["hey welcome...", "checking connection...", "loading images", "loading tickets...", "loding gallary..", "wait it is done now..."]
+let j = 0
+setInterval(function loderLen() {
+
+    if (j > lodingTag.length) {
+        j = 0;
+        loderLen()
+    } else {
+        document.querySelector('#loder h3').innerText = lodingTag[i];
+    }
+}, 1000 / 5);
 
 window.addEventListener('load', () => {
-    loder.style.display="none"
+    loder.style.display = "none"
     console.log("HEY WELCOME:\n<<< DURAV'S WORLD TRAVELS AND EXPLORE>>>")
 })
 
