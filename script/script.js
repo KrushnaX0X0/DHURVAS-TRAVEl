@@ -102,6 +102,8 @@ function addNewRouts(Routs) {
 
         Routs.forEach((rout) => {
 
+             let link=rout.placeName.replaceAll(" ","_")
+
             NewCreatedRouts += `<div class="packege-body">
                     <div class="dest-img">
                           <img src="${rout.placeImage}" alt="">
@@ -114,7 +116,7 @@ function addNewRouts(Routs) {
                          <span class="prise"><i class="ri-money-rupee-circle-line"></i> RS ${rout.cost}</span>
                     </div>
                          <span class="date days">Starting at :${rout.date}</span>
-                    <button class="btn-des-1">Know More</button>
+                    <button class="btn-des-1" onclick="getContact('${link}')">Know More</button>
                 </div>`
 
         })
@@ -170,7 +172,7 @@ mobNavLinks.forEach((link) => {
 // handing button events...
 
 const getContact = (tour) => {
-    window.open(`https://wa.me/+918459360294/?text=HELLOW_I_WANT_TO_KNOW_ABOUT_${tour}`)
+    window.open(`https://wa.me/+917738910772/?text=hello_i_wanr_to_know_more_about_${tour}_tour`)
 }
 
 
