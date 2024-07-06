@@ -150,7 +150,7 @@
 
 
 #page3{
-    height: 80vh;
+    height: 62vh;
     width: 100vw;
     background-color:#f1f5f7;
 }
@@ -333,6 +333,12 @@
    font-size: 2.9vw;
    font-weight: 800;
    color: black;
+}
+#part1{
+    width: 20vw;
+}
+#part2{
+    font-size: 2.2vw;
 }
 
 
